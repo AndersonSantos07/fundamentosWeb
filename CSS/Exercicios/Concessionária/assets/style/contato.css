@@ -1,0 +1,70 @@
+main{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    margin:0 auto;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+
+.form-header{
+
+text-align: center;
+margin: 30px 0;
+
+
+}
+
+.form-header > h1{
+    font-size:30px;
+}
+
+
+form > label{
+    font-weight: bold;
+
+}
+
+#email,#nome{
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    height: 25px;
+    padding:2px;
+}
+
+#email:hover,#nome:hover{
+    opacity:0.8;
+}
+
+#texto{
+    outline:none;
+}
+
+#button{
+    height: 25px;
+    width:50%;
+    font-weight: bold;
+    margin:0 auto;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.705);
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    padding:5px;
+    margin-bottom:35px;
+    cursor:pointer;
+}
+
+#button:hover{
+    opacity:0.8;
+}
+
+#button:active{
+    opacity:0.6;
+}
