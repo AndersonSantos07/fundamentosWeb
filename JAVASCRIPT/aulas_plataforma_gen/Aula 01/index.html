@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>home</li>
+                <li>contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="main-header">
+            <h1>entre em contato comigo</h1>
+        </div>
+        <div id="sections">
+            <section class="section-one section">
+                <form>
+                    <div>
+                        <label for="name">nome: </label>
+                        <input type="text" name="name" id="name" onkeyup="validaNome()">
+                        <p id="txtMessageName"></p>
+                    </div>
+    
+                    <div>
+                        <label for="email">e-mail: </label>
+                        <input type="text" name="email" id="email" onkeyup="validaEmail()">
+                        <p id="txtMessageEmail"></p>
+                    </div>
+    
+                    <div>
+                        <label for="assunto">assunto: </label>
+                        <textarea name="assunto" id="assuntoInput" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+                        <p id="txtAssunto"></p>
+                    </div>
+    
+                    <div>
+                        <button id="button" onclick="enviar()">Enviar</button>
+                    </div>
+                </form>
+            </section>
+    
+            <section class="section-two section">
+                <div>
+                    <p>Av. Pulista, 100</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1973529954835!2d-46.6564943!3d-23.5613545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1695914712273!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+                </div>
+            </section>
+    
+
+        </div>
+        
+    </main>
+    
+</body>
+</html>
